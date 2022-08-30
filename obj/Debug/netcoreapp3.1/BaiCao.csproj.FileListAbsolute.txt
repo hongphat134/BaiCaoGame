@@ -1,0 +1,17 @@
+C:\Users\Phat\OneDrive\Desktop\BaiCao\bin\Debug\netcoreapp3.1\BaiCao.exe
+C:\Users\Phat\OneDrive\Desktop\BaiCao\bin\Debug\netcoreapp3.1\BaiCao.deps.json
+C:\Users\Phat\OneDrive\Desktop\BaiCao\bin\Debug\netcoreapp3.1\BaiCao.runtimeconfig.json
+C:\Users\Phat\OneDrive\Desktop\BaiCao\bin\Debug\netcoreapp3.1\BaiCao.runtimeconfig.dev.json
+C:\Users\Phat\OneDrive\Desktop\BaiCao\bin\Debug\netcoreapp3.1\BaiCao.dll
+C:\Users\Phat\OneDrive\Desktop\BaiCao\bin\Debug\netcoreapp3.1\BaiCao.pdb
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.csproj.GenerateResource.cache
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.AssemblyInfoInputs.cache
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.AssemblyInfo.cs
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.csproj.CoreCompileInputs.cache
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.dll
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.pdb
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.genruntimeconfig.cache
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.Properties.Resources.resources
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.BaiCaoForm.resources
+C:\Users\Phat\OneDrive\Desktop\BaiCao\obj\Debug\netcoreapp3.1\BaiCao.csproj.AssemblyReference.cache
