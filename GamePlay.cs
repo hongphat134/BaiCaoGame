@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace BaiCao
 {
@@ -15,18 +16,17 @@ namespace BaiCao
         #endregion
 
         #region METHODS
-        public GamePlay()
+        public GamePlay(int playerCount, int deposit, int coin)
         {
-            this.deposit = 10000;
+            this.deposit = deposit;
             this.listCard = new List<Card>();
             int index = r.Next(10, 99);
-            this.mainPlayer = new Player("HTP", index * 10000);
+            this.mainPlayer = new Player(999,"HTP", coin);
 
             this.listPlayer = new List<Player>();
-            for(int idx = 1; idx <= 8;idx++)
+            for(int idx = 1; idx <= playerCount; idx++)
             {
-                index = r.Next(10, 99);
-                this.listPlayer.Add(new Player("Player " + idx, index * 10000));
+                this.listPlayer.Add(new Player(idx,"Player " + idx, coin));
             }
         }
 
@@ -134,6 +134,54 @@ namespace BaiCao
                 player.coin += CalculatedMoney(player);
             }
         }
+
+        public bool removePlayerByID(int ID)
+        {
+            foreach(Player player in listPlayer)
+            {
+                if(player.ID == ID)
+                {
+                    listPlayer.Remove(player); return true;
+                }
+            }
+            return false;
+        }
+
+        public void removeOutOfMoneyPlayers(List<int> IDPlayerList)
+        {
+            foreach (int ID in IDPlayerList)
+            {
+                removePlayerByID(ID);
+            }
+        }
+
+        public bool IsWon()
+        {
+            return listPlayer.Count == 0;            
+        }
+
+        public bool IsLose()
+        {
+            return mainPlayer.coin < (deposit * listPlayer.Count);
+        }
+
+        public List<int> CheckCoinToFindOutOfMoneyIDPlayer()
+        {
+            List<int> removeIDPlayerList = new List<int>();
+                             
+            foreach(Player player in listPlayer)
+            {
+                if (player.coin < deposit)
+                {
+                    MessageBox.Show(player.name + " đã bị loại vì hết Coin !" + listPlayer.Count);
+                    removeIDPlayerList.Add(player.ID);                    
+                }
+            }                     
+          
+            return removeIDPlayerList;
+        }
         #endregion
+
+
     }
 }

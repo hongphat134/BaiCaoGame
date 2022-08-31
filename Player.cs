@@ -7,6 +7,7 @@ namespace BaiCao
     class Player
     {
         #region ATTRIBUTES
+        public int ID;
         public String name;
         public int coin;
         public List<Card> cards;
@@ -14,8 +15,9 @@ namespace BaiCao
         #endregion
 
         #region METHODS
-        public Player(String name, int coin)
+        public Player(int ID,String name, int coin)
         {
+            this.ID = ID;
             this.name = name;
             this.coin = coin;
             this.cards = new List<Card>();
